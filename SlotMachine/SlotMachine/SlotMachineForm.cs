@@ -81,6 +81,8 @@ namespace SlotMachine
             lossNumber = 0;
             winRatio = 0.0f;
             bettextbox.Text = playerBet.ToString();
+            credittextbox.Text = playerMoney.ToString();
+            winnerpaidtextbox.Text = "Amount";
         }
 
         /* Check to see if the player won the jackpot */
@@ -275,7 +277,9 @@ namespace SlotMachine
             else if (playerBet <= playerMoney)
             {
                 spinResult = Reels();
+                credittextbox.Text = playerMoney.ToString();
                 determineWinnings();
+                credittextbox.Text = playerMoney.ToString();
                 turn++;
                 showPlayerStats();
             }
@@ -310,8 +314,19 @@ namespace SlotMachine
         /// <param name="e"></param>
         private void slotformload(object sender, EventArgs e)
         {
+            credittextbox.Text = playerMoney.ToString();
+            bettextbox.Text = "10";
             playerBet = 10; // default bet amount
 
+        }
+        /// <summary>
+        /// reset button handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void resetbuttonclick(object sender, EventArgs e)
+        {
+            this.resetAll();
         }
     }
 
