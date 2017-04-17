@@ -76,10 +76,11 @@ namespace SlotMachine
             winnings = 0;
             jackpot = 5000;
             turn = 0;
-            playerBet = 0;
+            playerBet = 10;
             winNumber = 0;
             lossNumber = 0;
             winRatio = 0.0f;
+            bettextbox.Text = playerBet.ToString();
         }
 
         /* Check to see if the player won the jackpot */
@@ -281,6 +282,20 @@ namespace SlotMachine
             else
             {
                 MessageBox.Show("Please enter a valid bet amount");
+            }
+        }
+
+        private void betboxclick(object sender, EventArgs e)
+        {
+            PictureBox box = sender as PictureBox;
+            if (playerMoney < Convert.ToInt32(box.Tag.ToString()))
+            {
+                MessageBox.Show("You don't have enough money to place that bet!", "Insufficient Funds");
+            }
+            else
+            {
+                bettextbox.Text = box.Tag.ToString();
+                playerBet = Convert.ToInt32(box.Tag.ToString());
             }
         }
     }
