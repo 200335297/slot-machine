@@ -254,7 +254,7 @@ namespace SlotMachine
 
         private void SpinPictureBox_Click(object sender, EventArgs e)
         {
-            playerBet = 10; // default bet amount
+            
 
             if (playerMoney == 0)
             {
@@ -285,6 +285,11 @@ namespace SlotMachine
             }
         }
 
+        /// <summary>
+        /// bet button textbox click handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void betboxclick(object sender, EventArgs e)
         {
             PictureBox box = sender as PictureBox;
@@ -297,6 +302,16 @@ namespace SlotMachine
                 bettextbox.Text = box.Tag.ToString();
                 playerBet = Convert.ToInt32(box.Tag.ToString());
             }
+        }
+        /// <summary>
+        /// on form load
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void slotformload(object sender, EventArgs e)
+        {
+            playerBet = 10; // default bet amount
+
         }
     }
 

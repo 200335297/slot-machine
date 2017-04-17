@@ -98,7 +98,7 @@
             this.bet50picture.TabIndex = 7;
             this.bet50picture.TabStop = false;
             this.bet50picture.Tag = "50";
-            this.bet50picture.ClientSizeChanged += new System.EventHandler(this.betboxclick);
+            this.bet50picture.Click += new System.EventHandler(this.betboxclick);
             // 
             // pictureBox4
             // 
@@ -241,6 +241,7 @@
             this.Name = "SlotMachineForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Slot Machine";
+            this.Load += new System.EventHandler(this.slotformload);
             ((System.ComponentModel.ISupportInitialize)(this.SpinPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
