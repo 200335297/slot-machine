@@ -168,28 +168,36 @@
             // 
             // credittextbox
             // 
+            this.credittextbox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.credittextbox.ForeColor = System.Drawing.SystemColors.Info;
             this.credittextbox.Location = new System.Drawing.Point(75, 378);
             this.credittextbox.Name = "credittextbox";
             this.credittextbox.ReadOnly = true;
             this.credittextbox.Size = new System.Drawing.Size(100, 20);
             this.credittextbox.TabIndex = 9;
+            this.credittextbox.Text = "Credits";
             // 
             // bettextbox
             // 
-            this.bettextbox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bettextbox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bettextbox.ForeColor = System.Drawing.SystemColors.Info;
             this.bettextbox.Location = new System.Drawing.Point(194, 378);
             this.bettextbox.Name = "bettextbox";
             this.bettextbox.ReadOnly = true;
             this.bettextbox.Size = new System.Drawing.Size(64, 20);
             this.bettextbox.TabIndex = 9;
+            this.bettextbox.Text = "Value";
             // 
             // winnerpaidtextbox
             // 
+            this.winnerpaidtextbox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.winnerpaidtextbox.ForeColor = System.Drawing.SystemColors.Info;
             this.winnerpaidtextbox.Location = new System.Drawing.Point(283, 378);
             this.winnerpaidtextbox.Name = "winnerpaidtextbox";
             this.winnerpaidtextbox.ReadOnly = true;
             this.winnerpaidtextbox.Size = new System.Drawing.Size(100, 20);
             this.winnerpaidtextbox.TabIndex = 9;
+            this.winnerpaidtextbox.Text = "Amount";
             // 
             // headtextbox
             // 
