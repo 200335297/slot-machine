@@ -90,7 +90,8 @@ namespace SlotMachine
             var jackPotWin = this.random.Next(51) + 1;
             if (jackPotTry == jackPotWin)
             {
-                MessageBox.Show("You Won the $" + jackpot + " Jackpot!!","Jackpot!!");
+                winnerpaidtextbox.Text = "JACKPOT!!";
+              MessageBox.Show("You Won the $" + jackpot + " Jackpot!!","Jackpot!!");
                 playerMoney += jackpot;
                 jackpot = 1000;
             }
@@ -100,7 +101,8 @@ namespace SlotMachine
         private void showWinMessage()
         {
             playerMoney += winnings;
-            MessageBox.Show("You Won: $" + winnings, "Winner!");
+            winnerpaidtextbox.Text = "$" + winnings;
+            //MessageBox.Show("You Won: $" + winnings, "Winner!");
             resetFruitTally();
             checkJackPot();
         }
@@ -109,7 +111,8 @@ namespace SlotMachine
         private void showLossMessage()
         {
             playerMoney -= playerBet;
-            MessageBox.Show("You Lost!", "Loss!");
+            winnerpaidtextbox.Text = "Lost";
+           // MessageBox.Show("You Lost!", "Loss!");
             resetFruitTally();
         }
 
