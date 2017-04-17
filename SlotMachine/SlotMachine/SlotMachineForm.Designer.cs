@@ -39,10 +39,10 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.credittextbox = new System.Windows.Forms.TextBox();
+            this.bettextbox = new System.Windows.Forms.TextBox();
+            this.winnerpaidtextbox = new System.Windows.Forms.TextBox();
+            this.headtextbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.SpinPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -148,7 +148,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::SlotMachine.Properties.Resources.cherry;
+            this.pictureBox6.Image = global::SlotMachine.Properties.Resources.bar;
             this.pictureBox6.Location = new System.Drawing.Point(306, 230);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(77, 122);
@@ -166,37 +166,38 @@
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
             // 
-            // textBox1
+            // credittextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(75, 378);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 9;
+            this.credittextbox.Location = new System.Drawing.Point(75, 378);
+            this.credittextbox.Name = "credittextbox";
+            this.credittextbox.ReadOnly = true;
+            this.credittextbox.Size = new System.Drawing.Size(100, 20);
+            this.credittextbox.TabIndex = 9;
             // 
-            // textBox2
+            // bettextbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(194, 378);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(64, 20);
-            this.textBox2.TabIndex = 9;
+            this.bettextbox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bettextbox.Location = new System.Drawing.Point(194, 378);
+            this.bettextbox.Name = "bettextbox";
+            this.bettextbox.ReadOnly = true;
+            this.bettextbox.Size = new System.Drawing.Size(64, 20);
+            this.bettextbox.TabIndex = 9;
             // 
-            // textBox3
+            // winnerpaidtextbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(283, 378);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
+            this.winnerpaidtextbox.Location = new System.Drawing.Point(283, 378);
+            this.winnerpaidtextbox.Name = "winnerpaidtextbox";
+            this.winnerpaidtextbox.ReadOnly = true;
+            this.winnerpaidtextbox.Size = new System.Drawing.Size(100, 20);
+            this.winnerpaidtextbox.TabIndex = 9;
             // 
-            // textBox4
+            // headtextbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(181, 164);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 9;
+            this.headtextbox.Location = new System.Drawing.Point(181, 164);
+            this.headtextbox.Name = "headtextbox";
+            this.headtextbox.ReadOnly = true;
+            this.headtextbox.Size = new System.Drawing.Size(100, 20);
+            this.headtextbox.TabIndex = 9;
             // 
             // SlotMachineForm
             // 
@@ -205,10 +206,10 @@
             this.BackgroundImage = global::SlotMachine.Properties.Resources.slotmachine;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(462, 533);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.winnerpaidtextbox);
+            this.Controls.Add(this.headtextbox);
+            this.Controls.Add(this.bettextbox);
+            this.Controls.Add(this.credittextbox);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -254,9 +255,9 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox credittextbox;
+        private System.Windows.Forms.TextBox bettextbox;
+        private System.Windows.Forms.TextBox winnerpaidtextbox;
+        private System.Windows.Forms.TextBox headtextbox;
     }
 }

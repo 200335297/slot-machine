@@ -10,3 +10,9 @@ C:\Users\Tom\Documents\COMP1004\SlotMachine\SlotMachine\obj\Debug\SlotMachine.pd
 C:\Users\Maddy\Desktop\gowtham\Semester3\Advanced programming\SlotMachine-VS\SlotMachine\SlotMachine\bin\Debug\SlotMachine.exe.config
 C:\Users\Maddy\Desktop\gowtham\Semester3\Advanced programming\SlotMachine-VS\SlotMachine\SlotMachine\obj\Debug\SlotMachine.exe
 C:\Users\Maddy\Desktop\gowtham\Semester3\Advanced programming\SlotMachine-VS\SlotMachine\SlotMachine\obj\Debug\SlotMachine.pdb
+C:\Users\Maddy\Desktop\gowtham\Semester3\Advanced programming\SlotMachine-VS\SlotMachine\SlotMachine\bin\Debug\SlotMachine.exe
+C:\Users\Maddy\Desktop\gowtham\Semester3\Advanced programming\SlotMachine-VS\SlotMachine\SlotMachine\bin\Debug\SlotMachine.pdb
+C:\Users\Maddy\Desktop\gowtham\Semester3\Advanced programming\SlotMachine-VS\SlotMachine\SlotMachine\obj\Debug\SlotMachine.csprojResolveAssemblyReference.cache
+C:\Users\Maddy\Desktop\gowtham\Semester3\Advanced programming\SlotMachine-VS\SlotMachine\SlotMachine\obj\Debug\SlotMachine.Properties.Resources.resources
+C:\Users\Maddy\Desktop\gowtham\Semester3\Advanced programming\SlotMachine-VS\SlotMachine\SlotMachine\obj\Debug\SlotMachine.SlotMachineForm.resources
+C:\Users\Maddy\Desktop\gowtham\Semester3\Advanced programming\SlotMachine-VS\SlotMachine\SlotMachine\obj\Debug\SlotMachine.csproj.GenerateResource.Cache
