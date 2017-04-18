@@ -9,6 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Name: Gowtham Talluri
+//ID: 200335297
+//AppName: SlotMachine
+//Description: Play the slot game
+
 namespace SlotMachine
 {
     public partial class SlotMachineForm : Form
