@@ -328,6 +328,15 @@ namespace SlotMachine
         {
             this.resetAll();
         }
+        /// <summary>
+        /// event handler for exit the code
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Exitapplication(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 
 }
