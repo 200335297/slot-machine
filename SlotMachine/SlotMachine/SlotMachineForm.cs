@@ -95,10 +95,10 @@ namespace SlotMachine
             if (jackPotTry == jackPotWin)
             {
                 winnerpaidtextbox.Text = "JACKPOT!!";
-                headtextbox.Text = "JACKPOT!!";
+                headtextbox.Text = "5000";
               MessageBox.Show("You Won the $" + jackpot + " Jackpot!!","Jackpot!!");
                 playerMoney += jackpot;
-                jackpot = 1000;
+                jackpot = 5000;
             }
         }
 
@@ -288,7 +288,9 @@ namespace SlotMachine
 
         private void SpinPictureBox_Click(object sender, EventArgs e)
         {
-            
+            headtextbox.Text = " ";
+
+
 
             if (playerMoney == 0)
             {
@@ -313,7 +315,7 @@ namespace SlotMachine
                 determineWinnings();
                 credittextbox.Text = playerMoney.ToString();
                 turn++;
-                showPlayerStats();
+                //showPlayerStats();
                 if (playerMoney <= 0)
                 {
                     if (MessageBox.Show("You ran out of Money! \nDo you want to play again?", "Out of Money!", MessageBoxButtons.YesNo) == DialogResult.Yes)
