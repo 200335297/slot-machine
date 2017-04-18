@@ -216,7 +216,6 @@
             this.headtextbox.ReadOnly = true;
             this.headtextbox.Size = new System.Drawing.Size(100, 20);
             this.headtextbox.TabIndex = 9;
-            this.headtextbox.Text = "Jackpot";
             // 
             // SlotMachineForm
             // 
