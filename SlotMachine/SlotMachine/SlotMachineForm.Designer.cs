@@ -209,11 +209,14 @@
             // 
             // headtextbox
             // 
+            this.headtextbox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.headtextbox.ForeColor = System.Drawing.SystemColors.Info;
             this.headtextbox.Location = new System.Drawing.Point(181, 164);
             this.headtextbox.Name = "headtextbox";
             this.headtextbox.ReadOnly = true;
             this.headtextbox.Size = new System.Drawing.Size(100, 20);
             this.headtextbox.TabIndex = 9;
+            this.headtextbox.Text = "Jackpot";
             // 
             // SlotMachineForm
             // 

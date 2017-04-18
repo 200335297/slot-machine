@@ -83,6 +83,7 @@ namespace SlotMachine
             bettextbox.Text = playerBet.ToString();
             credittextbox.Text = playerMoney.ToString();
             winnerpaidtextbox.Text = "Amount";
+            headtextbox.Text = " ";
         }
 
         /* Check to see if the player won the jackpot */
@@ -94,6 +95,7 @@ namespace SlotMachine
             if (jackPotTry == jackPotWin)
             {
                 winnerpaidtextbox.Text = "JACKPOT!!";
+                headtextbox.Text = "JACKPOT!!";
               MessageBox.Show("You Won the $" + jackpot + " Jackpot!!","Jackpot!!");
                 playerMoney += jackpot;
                 jackpot = 1000;
@@ -282,6 +284,13 @@ namespace SlotMachine
                 credittextbox.Text = playerMoney.ToString();
                 turn++;
                 showPlayerStats();
+                if (playerMoney <= 0)
+                {
+                    if (MessageBox.Show("You ran out of Money! \nDo you want to play again?", "Out of Money!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        resetAll();
+                    }
+                }
             }
             else
             {
